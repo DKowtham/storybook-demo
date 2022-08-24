@@ -19,4 +19,4 @@ jobs:
         run: npm run build
       
       - name: Build Docs
-        run: npm run build-storybook
+        run: npm run build-storybook -o docs
