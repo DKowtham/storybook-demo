@@ -1,0 +1,5 @@
+/* Import all css files here for a single import in index.html */
+
+@import "./design-system/variables.css";
+@import "./design-system/colors.css";
+@import "./generic/generic.css";

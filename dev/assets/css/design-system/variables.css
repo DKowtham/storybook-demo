@@ -1,0 +1,146 @@
+:root {
+
+    /* SIZE */
+    --sz-2xs: 5px; 
+    --sz-xs: 10px; 
+    --sz-sm: 15px; 
+    --sz-md: 20px; 
+    --sz-lg: 30px; 
+    --sz-xl: 40px;  
+    --sz-2xl: 50px;  
+    --sz-3xl: 60px;  
+    --sz-4xl: 75px; 
+    --sz-5xl: 100px;
+
+    /* SIZES SCREEN */
+    --sz-screen-lg: 1100px;
+
+    /* SIZES MEDIA */
+    --sz-md-mobile-sm-max: 374px;
+    --sz-md-mobile-max: 767px;
+    --sz-md-tablet-min: 768px;
+    --sz-md-tablet-max: 1279px;
+    --sz-md-desktop-min: 1280px;
+
+    /* MARGINS */
+    --mg-2xs: var(--sz-2xs); 
+    --mg-xs: var(--sz-xs);
+    --mg-sm: var(--sz-sm);
+    --mg-md: var(--sz-md);
+    --mg-lg: var(--sz-lg);
+    --mg-xl: var(--sz-xl);
+    --mg-2xl: var(--sz-2xl);
+    --mg-3xl: var(--sz-3xl);
+    --mg-4xl: var(--sz-4xl);
+    --mg-5xl: var(--sz-5xl);
+
+    /* Margin between components */
+    --mg-between-sm: var(--sz-sm);
+    --mg-between-base: var(--sz-lg);
+    --mg-between-lg: var(--sz-xl);
+
+    /* Margin inside components */
+    --mg-inside-sm: var(--sz-2xs);
+    --mg-inside-base: var(--sz-xs);
+
+    /* PADDINGS */
+    --pd-2xs: var(--sz-2xs); 
+    --pd-xs: var(--sz-xs);
+    --pd-sm: var(--sz-sm);
+    --pd-md: var(--sz-md);
+    --pd-lg: var(--sz-lg);
+    --pd-xl: var(--sz-xl);
+    --pd-2xl: var(--sz-2xl);
+    --pd-3xl: var(--sz-3xl);
+    --pd-4xl: var(--sz-4xl);
+    --pd-5xl: var(--sz-5xl);
+
+    /* Padding block element display */
+    /* Important: diferent values between metasites and directories */
+    --pd-block: 0;
+    --pd-block-exception: 0;
+
+    /* FONT SIZE */
+    --fs-2xs: 0.7rem;  /* 11px */
+    --fs-xs: 0.75rem;  /* 12px */
+    --fs-sm: 0.9rem;   /* 14px */
+    --fs-base: 1rem;   /* 16px */
+    --fs-lg: 1.25rem;  /* 20px */
+    --fs-xl: 1.9rem;   /* 30px */
+    --fs-2xl: 2.5rem;  /* 40px */
+    --fs-3xl: 3.1rem;  /* 50px */
+
+    /* FONT WEIGHT */
+    --fw-light: 200; 
+    --fw-regular: 400;
+    --fw-medium: 600;
+    --fw-bold: 700;
+
+    /* BORDER-RADIUS */
+    --br-pn: 18px 5px;
+    --br-sm: 5px;
+    --br-base: 10px;
+    --br-lg: 15px;
+    --br-circle: 50%;
+
+    /* TRANSITION DURATION */
+    --tr-faster: 0.1s; 
+    --tr-fast: 0.2s; 
+    --tr-base: 0.3s; 
+    --tr-slow: 0.5s; 
+    --tr-slower: 0.8s; 
+
+    /* Z-INDEX */
+    --zi-neg-1: -1;
+    --zi-0: 0;
+    --zi-1: 1;
+    --zi-2: 2; 
+    --zi-10: 10;
+    --zi-20: 20;
+    --zi-30: 30;
+    --zi-40: 40;
+    --zi-50: 50;
+    --zi-60: 60;
+    --zi-70: 70; 
+    --zi-80: 80;
+    --zi-90: 90; 
+    --zi-100: 100;
+    --zi-110: 110;
+
+    /* OPACITY */
+    --op-0: 0;  
+    --op-2: 2;
+    --op-5: 5;
+    --op-10: 10;
+    --op-20: 20;
+    --op-40: 40;
+    --op-60: 60;
+    --op-80: 80;
+    --op-100: 100;
+
+    /* BOX SHADOW */
+    /* scale */
+    --bs-scale-sm: 0 2px 6px 0px; 
+    --bs-scale-base: 0px 2px 12px 1px; 
+    --bs-scale-lg: 0 3px 20px 2px; 
+    --bs-scale-xl: 10px 10px 50px; 
+
+    --bs-sm: var(--bs-scale-sm) var(--c-grey-shadow);
+    --bs-base: var(--bs-scale-base) var(--c-grey-shadow);
+    --bs-lg: var(--bs-scale-lg) var(--c-grey-shadow);
+    --bs-xl: var(--bs-scale-lg) var(--c-grey-shadow);
+}
+
+@media (min-width:768px) {
+    :root {
+        --pd-block: 0 48px;
+        --pd-block-exception: 0 66px;
+    }
+}
+
+@media (min-width:1280px) {
+    :root {
+        --pd-block: initial;
+        --pd-block-exception: initial;
+    }
+}

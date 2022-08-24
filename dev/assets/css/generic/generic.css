@@ -1,0 +1,18 @@
+/* Just some style for the index.html file */
+
+:root {
+    font-family: "Avenir", "Helvetica Neue", Arial, sans-serif;
+}
+
+main {
+    max-width: var(--sz-screen-lg);
+    margin: auto; 
+}
+
+h3 {
+    color: var(--c-grey-txt);
+}
+
+.sprite-container {
+    display: none;
+}
