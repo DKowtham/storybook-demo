@@ -1,1 +1,0 @@
-{"version":3,"file":"ppn-callout.d.ts","sourceRoot":"","sources":["../../../src/webcomponents/common/ppn-callout.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAQ,cAAc,EAAE,SAAS,EAAO,MAAM,KAAK,CAAA;AAGtE;;;;;;;;;GASG;AAEH,MAAM,CAAC,OAAO,OAAO,UAAW,SAAQ,UAAU;IAGrC,KAAK,SAAM;IAGpB,IAAI,EAAE,MAAM,EAAE,CAAM;IAEpB,OAAgB,MAAM,EAAE,SAAS,CAkE/B;IAEO,MAAM,IAAI,cAAc;CAgBpC"}

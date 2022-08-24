@@ -1,1 +1,0 @@
-{"version":3,"file":"iEvents.js","sourceRoot":"","sources":["../../../src/assets/interfaces/iEvents.ts"],"names":[],"mappings":"","sourcesContent":["export interface IEvent {\n    detail: string,\n    bubbles: boolean,\n    composed: boolean\n}"]}
