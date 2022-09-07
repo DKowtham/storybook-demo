@@ -1,7 +1,9 @@
 name: acq-components workflow
 
-on: [push, pull_request]
-
+on:
+    push:
+        branches:
+            - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,6 +19,6 @@ jobs:
 
       - name: Build project
         run: npm run build
-      
+
       - name: Build Docs
         run: npm run build-storybook -o docs
