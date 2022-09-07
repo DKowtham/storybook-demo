@@ -20,5 +20,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Build Docs
-        run: npm run build-storybook -o docs
+      -   name: Deploy Storybook
+          uses: JamesIves/github-pages-deploy-action@3.6.2
+          with:
+              BRANCH: main
+              FOLDER: docs-build
+              CLEAN: true
+              TARGET_FOLDER: docs
