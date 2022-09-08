@@ -22,4 +22,4 @@ jobs:
                   BRANCH: master
                   TARGET_FOLDER: docs
                   FOLDER: docs
-                  CLEAN: false
+                  CLEAN: true
