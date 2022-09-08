@@ -1,0 +1,26 @@
+name: Deploy Storybook
+
+on:
+    push:
+        branches:
+            - master
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout
+                uses: actions/checkout@master
+
+            -   name: Install and Build
+                run:
+                    npm install
+                    npm run build-storybook
+
+            -   name: Build and Deploy storybook
+            uses: JamesIves/github-pages-deploy-action@2.0.3
+                env:
+                BRANCH: master
+                FOLDER: docs-build
+                BUILD_SCRIPT: npm install && npm run build-storybook
+                CLEAN: true
+                TARGET_FOLDER: docs
