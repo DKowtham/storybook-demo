@@ -34,12 +34,6 @@ jobs:
               uses: actions/configure-pages@v2
             - name: Install and Build
               run: npm install && npm run build-storybook
-            - name: Deploy
-              uses: peaceiris/actions-gh-pages@bbdfb200618d235585ad98e965f4aafc39b4c501 # v3.7.3
-              with:
-               github_token: ${{ secrets.GITHUB_TOKEN }}
-               publish_dir: docs
-               force_orphan: true
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
